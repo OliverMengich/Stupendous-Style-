@@ -1,0 +1,26 @@
+﻿<Application
+    x:Class="StupendousStyleChallenge1.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StupendousStyleChallenge1">
+    <Application.Resources>
+        <Style TargetType="Image" x:Key="AwesomeImageStyle">
+            <Setter Property="Source" Value="Assets/Awesome.jpg"/>
+            <Setter Property="Stretch" Value="Uniform"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="20,20,20,20"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="DonutTextBlock">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            
+
+        </Style>
+        <Style TargetType="TextBlock" x:Key="ResultanTextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            
+        </Style>
+    </Application.Resources>
+</Application>

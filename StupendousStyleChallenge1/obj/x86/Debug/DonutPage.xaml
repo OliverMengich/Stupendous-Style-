@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="StupendousStyleChallenge1.DonutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StupendousStyleChallenge1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Red">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image  Style="{StaticResource AwesomeImageStyle}"/>
+        <StackPanel  Orientation="Horizontal" Grid.Row="1">
+            <TextBlock Text="Original Glazed Count" Style="{StaticResource DonutTextBlock}"/>
+            <Slider x:ConnectionId='3' x:Name="MySlider"
+                  Maximum="100"
+                  Minimum="0"
+                    Width="200"
+                Margin="20" 
+                 >
+                <Slider.RenderTransform>
+                    <CompositeTransform Rotation="-1.039"/>
+                </Slider.RenderTransform>
+            </Slider>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <TextBlock Text="Special Glazed Count" Style="{StaticResource DonutTextBlock}"/>
+            <Slider x:ConnectionId='2' x:Name="MySlider1"
+                    Minimum="0"
+                    Maximum="100"
+                    Width="200"
+                    Margin="20"/>
+        </StackPanel>
+    </Grid>
+</Page>
+
